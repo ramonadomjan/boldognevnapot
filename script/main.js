@@ -290,19 +290,18 @@ const animationTimeline = () => {
         rotation: 90
       },
       "+=1"
-    );
-
-  .staggerFrom(".ten p", 1, ideaTextTrans, 1.2)
-    .to(
-      ".wish-hbd_2",
+    )
+    
+    .staggerTo(
+      ".wish-hbd_2 span",
       0.5,
       {
-        rotation: 90
+        visibility: "visible"
       },
-      "+=1"
-      
-    .to(".fake-btn", 0.1)
-    );
+      0.05
+    )
+    .to(".button", 0.1, {
+    });
 
   // tl.seek("currentStep");
   // tl.timeScale(2);
